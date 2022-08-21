@@ -31,13 +31,10 @@ function remove() {
     element.parentNode.removeChild(element);
 }
 
-document.getElementsByClassName('btn').addEventListener('click', function () {
-    for (const button of btn) {
-        button.parentNode.removeChild(button);
-    }
-})
 
-const button = document.getElementsByClassName('btn');
+
+const button = document.getElementsByClassName('panda-btn-buy-now');
+console.log(button);
 for (const btn of button) {
     btn.addEventListener('click', function () {
         btn.parentNode.removeChild(btn);
